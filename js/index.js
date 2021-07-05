@@ -44,8 +44,10 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Task 2
 const nav = document.querySelector('nav')
 
+// Add CTA image
 const ctaImg = document.getElementById("cta-img")
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
+// Add middle image
 const middleImg = document.getElementById("middle-img")
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
