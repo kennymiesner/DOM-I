@@ -48,6 +48,14 @@ navLinks[3].textContent = siteContent["nav"]["nav-item-4"]
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
 
+// Change nav color to green
+navLinks[0].style.color = "green"
+navLinks[1].style.color = "green"
+navLinks[2].style.color = "green"
+navLinks[3].style.color = "green"
+navLinks[4].style.color = "green"
+navLinks[5].style.color = "green"
+
 // Add h1 content
 const ctaTitle = document.querySelector('.cta-text h1')
 ctaTitle.textContent = siteContent["cta"]["h1"]
@@ -98,3 +106,19 @@ bottomContent02title.textContent = siteContent["main-content"]["product-h4"]
 bottomContent02content.textContent = siteContent["main-content"]["product-content"]
 bottomContent03title.textContent = siteContent["main-content"]["vision-h4"]
 bottomContent03content.textContent = siteContent["main-content"]["vision-content"]
+
+// Add contact information
+const contact = document.querySelector('.contact')
+const contactTitle = contact.querySelector('h4')
+const contactAddress = contact.querySelector('p:nth-of-type(1)')
+const contactPhone = contact.querySelector('p:nth-of-type(2)')
+const contactEmail = contact.querySelector('p:nth-of-type(3)')
+
+contactTitle.textContent = siteContent["contact"]["contact-h4"]
+contactAddress.textContent = siteContent["contact"]["address"]
+contactPhone.textContent = siteContent["contact"]["phone"]
+contactEmail.textContent = siteContent["contact"]["email"]
+
+// Add footer content
+const footer = document.querySelector('footer p')
+footer.textContent = siteContent["footer"]["copyright"]
