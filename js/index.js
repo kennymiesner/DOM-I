@@ -38,11 +38,9 @@ const siteContent = {
 };
 
 // Task 2
-const navLinks = document.querySelectorAll('nav a')
-const ctaTitle = document.querySelector('.cta-text h1')
-const ctaButton = ctaTitle.nextElementSibling
 
 // Add all nav link content
+const navLinks = document.querySelectorAll('nav a')
 navLinks[0].textContent = siteContent["nav"]["nav-item-1"]
 navLinks[1].textContent = siteContent["nav"]["nav-item-2"]
 navLinks[2].textContent = siteContent["nav"]["nav-item-3"]
@@ -51,9 +49,11 @@ navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
 
 // Add h1 content
+const ctaTitle = document.querySelector('.cta-text h1')
 ctaTitle.textContent = siteContent["cta"]["h1"]
 
 // Add button content
+const ctaButton = ctaTitle.nextElementSibling
 ctaButton.textContent = siteContent["cta"]["button"]
 
 // Add main logo
@@ -64,6 +64,37 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const ctaImg = document.getElementById("cta-img")
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
+// Add top section content
+const topContent01 = document.querySelector(".top-content .text-content:nth-of-type(1)")
+const topContent01title = topContent01.querySelector('h4')
+const topContent01content = topContent01.querySelector('p')
+const topContent02 = document.querySelector(".top-content .text-content:nth-of-type(2)")
+const topContent02title = topContent02.querySelector('h4')
+const topContent02content = topContent02.querySelector('p')
+
+topContent01title.textContent = siteContent["main-content"]["features-h4"]
+topContent01content.textContent = siteContent["main-content"]["features-content"]
+topContent02title.textContent = siteContent["main-content"]["about-h4"]
+topContent02content.textContent = siteContent["main-content"]["about-content"]
+
 // Add middle image
 const middleImg = document.getElementById("middle-img")
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// Add bottom section content
+const bottomContent01 = document.querySelector(".bottom-content .text-content:nth-of-type(1)")
+const bottomContent01title = bottomContent01.querySelector('h4')
+const bottomContent01content = bottomContent01.querySelector('p')
+const bottomContent02 = document.querySelector(".bottom-content .text-content:nth-of-type(2)")
+const bottomContent02title = bottomContent02.querySelector('h4')
+const bottomContent02content = bottomContent02.querySelector('p')
+const bottomContent03 = document.querySelector(".bottom-content .text-content:nth-of-type(3)")
+const bottomContent03title = bottomContent03.querySelector('h4')
+const bottomContent03content = bottomContent03.querySelector('p')
+
+bottomContent01title.textContent = siteContent["main-content"]["services-h4"]
+bottomContent01content.textContent = siteContent["main-content"]["services-content"]
+bottomContent02title.textContent = siteContent["main-content"]["product-h4"]
+bottomContent02content.textContent = siteContent["main-content"]["product-content"]
+bottomContent03title.textContent = siteContent["main-content"]["vision-h4"]
+bottomContent03content.textContent = siteContent["main-content"]["vision-content"]
