@@ -37,12 +37,28 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img")
-logo.setAttribute('src', siteContent["nav"]["img-src"])
-
 // Task 2
-const nav = document.querySelector('nav')
+const navLinks = document.querySelectorAll('nav a')
+const ctaTitle = document.querySelector('.cta-text h1')
+const ctaButton = ctaTitle.nextElementSibling
+
+// Add all nav link content
+navLinks[0].textContent = siteContent["nav"]["nav-item-1"]
+navLinks[1].textContent = siteContent["nav"]["nav-item-2"]
+navLinks[2].textContent = siteContent["nav"]["nav-item-3"]
+navLinks[3].textContent = siteContent["nav"]["nav-item-4"]
+navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
+navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
+
+// Add h1 content
+ctaTitle.textContent = siteContent["cta"]["h1"]
+
+// Add button content
+ctaButton.textContent = siteContent["cta"]["button"]
+
+// Add main logo
+const logo = document.getElementById("logo-img")
+logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Add CTA image
 const ctaImg = document.getElementById("cta-img")
