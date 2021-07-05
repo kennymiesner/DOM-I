@@ -37,6 +37,88 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+// Task 2
+
+// Add all nav link content
+const navLinks = document.querySelectorAll('nav a')
+navLinks[0].textContent = siteContent["nav"]["nav-item-1"]
+navLinks[1].textContent = siteContent["nav"]["nav-item-2"]
+navLinks[2].textContent = siteContent["nav"]["nav-item-3"]
+navLinks[3].textContent = siteContent["nav"]["nav-item-4"]
+navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
+navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
+
+// Change nav color to green
+navLinks[0].style.color = "green"
+navLinks[1].style.color = "green"
+navLinks[2].style.color = "green"
+navLinks[3].style.color = "green"
+navLinks[4].style.color = "green"
+navLinks[5].style.color = "green"
+
+// Add h1 content
+const ctaTitle = document.querySelector('.cta-text h1')
+ctaTitle.textContent = siteContent["cta"]["h1"]
+
+// Add button content
+const ctaButton = ctaTitle.nextElementSibling
+ctaButton.textContent = siteContent["cta"]["button"]
+
+// Add main logo
+const logo = document.getElementById("logo-img")
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Add CTA image
+const ctaImg = document.getElementById("cta-img")
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+// Add top section content
+const topContent01 = document.querySelector(".top-content .text-content:nth-of-type(1)")
+const topContent01title = topContent01.querySelector('h4')
+const topContent01content = topContent01.querySelector('p')
+const topContent02 = document.querySelector(".top-content .text-content:nth-of-type(2)")
+const topContent02title = topContent02.querySelector('h4')
+const topContent02content = topContent02.querySelector('p')
+
+topContent01title.textContent = siteContent["main-content"]["features-h4"]
+topContent01content.textContent = siteContent["main-content"]["features-content"]
+topContent02title.textContent = siteContent["main-content"]["about-h4"]
+topContent02content.textContent = siteContent["main-content"]["about-content"]
+
+// Add middle image
+const middleImg = document.getElementById("middle-img")
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// Add bottom section content
+const bottomContent01 = document.querySelector(".bottom-content .text-content:nth-of-type(1)")
+const bottomContent01title = bottomContent01.querySelector('h4')
+const bottomContent01content = bottomContent01.querySelector('p')
+const bottomContent02 = document.querySelector(".bottom-content .text-content:nth-of-type(2)")
+const bottomContent02title = bottomContent02.querySelector('h4')
+const bottomContent02content = bottomContent02.querySelector('p')
+const bottomContent03 = document.querySelector(".bottom-content .text-content:nth-of-type(3)")
+const bottomContent03title = bottomContent03.querySelector('h4')
+const bottomContent03content = bottomContent03.querySelector('p')
+
+bottomContent01title.textContent = siteContent["main-content"]["services-h4"]
+bottomContent01content.textContent = siteContent["main-content"]["services-content"]
+bottomContent02title.textContent = siteContent["main-content"]["product-h4"]
+bottomContent02content.textContent = siteContent["main-content"]["product-content"]
+bottomContent03title.textContent = siteContent["main-content"]["vision-h4"]
+bottomContent03content.textContent = siteContent["main-content"]["vision-content"]
+
+// Add contact information
+const contact = document.querySelector('.contact')
+const contactTitle = contact.querySelector('h4')
+const contactAddress = contact.querySelector('p:nth-of-type(1)')
+const contactPhone = contact.querySelector('p:nth-of-type(2)')
+const contactEmail = contact.querySelector('p:nth-of-type(3)')
+
+contactTitle.textContent = siteContent["contact"]["contact-h4"]
+contactAddress.textContent = siteContent["contact"]["address"]
+contactPhone.textContent = siteContent["contact"]["phone"]
+contactEmail.textContent = siteContent["contact"]["email"]
+
+// Add footer content
+const footer = document.querySelector('footer p')
+footer.textContent = siteContent["footer"]["copyright"]
